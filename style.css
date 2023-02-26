@@ -93,4 +93,9 @@
   color: #000000;
   margin-left: 20px;
 }
+.l-topics__img {
+  height: 400px;
+  margin-top: 90px;
+  width: 50%;
+}
 }
