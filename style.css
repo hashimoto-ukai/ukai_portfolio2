@@ -1,5 +1,14 @@
 @media screen and (min-width: 769px) {
-
+body {
+  margin: 0;
+}
+.l-wrap.is-active {
+  position: fixed;
+}
+.l-wrap {
+  max-width: 100%;
+  overflow-x : hidden;
+}
 .l-header {
   width: 100%;
   position: fixed;
@@ -10,6 +19,8 @@
   justify-content: space-between;
   border-bottom: 1px solid;
   height: 80px;
+  z-index: 10;
+  background-color: #fff;
 }
 .l-header__title {
   margin-top: 25px;
@@ -50,6 +61,13 @@
 
 .l-header__container {
   display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 81px;
 }
 .l-header__list {
   display: flex;
@@ -97,5 +115,47 @@
   height: 400px;
   margin-top: 90px;
   width: 50%;
+}
+.bottom {
+  width: 100%;
+}
+.bottom__container {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.borttom__containerText {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+.bottom__logo {
+  margin-right: 50px;
+}
+.bottom__link {
+  display: inline-block;
+  padding: 0.8em 3em;
+  box-shadow: 2px 2px 0 #000000; /* 影の太さ・色 */
+  border: #000000 solid 1px;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+}
+.bottom__link:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.bottom__text {
+  font-size: 8px;
+  text-align: center;
+  margin-top: 10px;
+}
+.top__page {
+  margin-left: 50px;
+  margin-top: 50px;
+  color: #000000;
+  font-size: 12px;
 }
 }
