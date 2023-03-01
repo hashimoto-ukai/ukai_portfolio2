@@ -24,7 +24,7 @@ body {
 }
 .l-header__title {
   margin-top: 25px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .humberger {
   margin-top: 30px;
@@ -158,4 +158,144 @@ body {
   color: #000000;
   font-size: 12px;
 }
+
+
+
+/* ここからmain */
+.l-topics {
+  width: 100%;
+}
+.l-topics__list {
+  width: 60%;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.l-topics__img {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 100%;
+  width: 100%;
+  height: 100%;
+}
+.l-topics__text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.l-topics__text.is-active {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #fff;
+  background-color: #000000;
+}
+.l-topics__mediaBox {
+  display: flex;
+}
+.l-topics__link {
+  margin-right: 20px;
+}
+.l-topics__category {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/* ここからmain2 */
+.l-policy {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-top: 50px;
+}
+.l-policy__main {
+  width: 50%;
+  border-right: solid 1px #000000;
+}
+.l-policy__mainTitle {
+  margin-left: 120px;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+.l-policy__mainText {
+  margin-left: 120px;
+  margin-top: 80px;
+  font-size: 17px;
+  text-align: left;
+  line-height: 50px;
+  margin-bottom: 100px;
+}
+.l-policy__logo {
+  width: 50%;
+}
+.l-policy__logoText {
+  position: relative;
+  top: 600px;
+  margin-left: 80px;
+  font-weight: 700;
+}
+.l-policy__logoSubText {
+  position: relative;
+  top: 610px;
+  margin-bottom: 100px;
+  line-height: 26px;
+  margin-left: 80px;
+}
+
+
+
+
+
+
+/* ここからworks */
+
+.l-works {
+  width: 100%;
+  margin-top: 150px;
+}
+.l-works__title {
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.l-works__container {
+  display: flex;
+  border-top: solid 1px #000000;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.l-works__list {
+  width: 33%;
+  border-bottom: 1px solid #000000;
+}
+.l-works__img {
+  width: 80%;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 90%;
+  height: 0;
+  margin: 40px auto 20px auto;
+}
+
+.l-works__list:nth-last-of-type(3) {
+  border-right: solid 1px #000000;
+}
+.l-works__list:nth-last-of-type(6) {
+  border-right: solid 1px #000000;
+}
+.l-works__list:nth-last-of-type(2) {
+  border-right: solid 1px #000000;
+}
+.l-works__list:nth-last-of-type(5) {
+  border-right: solid 1px #000000;
+}
+.l-works__text {
+  font-size: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
 }
