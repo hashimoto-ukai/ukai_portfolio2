@@ -233,18 +233,21 @@ body {
 }
 .l-policy__logoText {
   position: relative;
-  top: 600px;
+  top: 90px;
   margin-left: 80px;
   font-weight: 700;
 }
 .l-policy__logoSubText {
   position: relative;
-  top: 610px;
+  top: 100px;
   margin-bottom: 100px;
   line-height: 26px;
   margin-left: 80px;
 }
-
+#canvas {
+  width: 100%;
+  height: 100%;
+}
 
 
 
