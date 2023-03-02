@@ -296,6 +296,43 @@ body {
   font-size: 20px;
   text-align: left;
   margin: 0 auto;
+  width: 80%;
+}
+.l-works__media {
+  width: 80%;
+  margin: 0 auto;
+}
+.l-works__listBox {
+  padding-left: 0;
+}
+.l-works__link {
+  list-style: none;
+}
+.l-works__link a {
+  text-decoration: none;
+  color: #000000;
+}
+.l-works__more {
+  width: 100%;
+  list-style: none;
+}
+.l-works__moreBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  margin-top: 50px;
+  text-decoration: none;
+  align-items: center;
+}
+.l-works__link {
+  color: #000000;
+}
+.l-works__arrow {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 25px;
+  color: #000000;
+
 }
 
 }
