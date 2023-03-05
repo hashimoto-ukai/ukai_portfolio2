@@ -1,12 +1,12 @@
 document.addEventListener( "DOMContentLoaded",function(){
   let canvas = null;  // キャンバス
-let g = null;       // 描画コンテキスト
-let x, y, r;        // ●のx座標、y座標、半径
-let vx, vy;            // x方向の速度、y方向の速度
+  let g = null;       // 描画コンテキスト
+  let x, y, r;        // ●のx座標、y座標、半径
+  let vx, vy;            // x方向の速度、y方向の速度
 
 function drawAnim(){
     // 背景をグレーに
-    g.fillStyle = "#ddd";
+    g.fillStyle = "#fff";
     g.fillRect(0, 0, canvas.width, canvas.height);
     // ●を描画
     g.beginPath();
@@ -26,7 +26,6 @@ function drawAnim(){
     // 再帰呼び出しでアニメーションさせる
     requestAnimationFrame(drawAnim);
 }
- 
 window.addEventListener("load", ()=>{
     // キャンバスの初期設定
     canvas = document.getElementById("canvas");
@@ -37,4 +36,7 @@ window.addEventListener("load", ()=>{
     // アニメーション開始
     drawAnim();
 });
+
+
+
 });
