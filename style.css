@@ -338,6 +338,20 @@ body {
 
 }
 
+
+
+
+/* ここからPEOPLE */
+.l-people {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.l-people__title {
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+}
 .loopSlide {
   position: relative;
   display: flex;
@@ -354,19 +368,6 @@ body {
 }
 .loopSlide ul:last-child {
   animation: slide2 60s linear infinite;
-}
-.kkk {
-  display: inline-block;
-  width: 100%;
-  min-width: 150px;
-  margin-right: 20px;
-  list-style: none;
-  text-align: center;
-}
-.ppp {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 @keyframes slide1 {
@@ -387,6 +388,56 @@ body {
   to {
       transform: translateX(-200%);
   }
+}
+
+.kkk {
+  display: inline-block;
+  width: 100%;
+  min-width: 150px;
+  list-style: none;
+  text-align: center;
+  border-top: solid 1px #000000;
+  border-right: solid 1px #000000;
+}
+.kkk.hover {
+  background-color: aqua;
+}
+.aaa {
+  align-items: center;
+  width: 70%;
+}
+.ppp {
+  width: 60%;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 60%;
+  margin: 60px auto 20px auto;
+  border-radius: 10%;
+}
+.uuu {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.uuu2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: solid 1px #000000;
+}
+.aaa {
+  text-decoration: none;
+  color: #000000;
+}
+.l-people__name {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.l-people__subname {
+  font-size: 5px;
+}
+.l-people__ocupation {
+  font-size: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 
@@ -430,6 +481,33 @@ body {
   to {
       transform: translateX(0);
   }
+}
+
+
+
+
+
+.l-people__more {
+  width: 100%;
+  list-style: none;
+}
+.l-people__moreBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  margin-top: 50px;
+  text-decoration: none;
+  align-items: center;
+}
+.l-people__link {
+  color: #000000;
+}
+.l-people__arrow {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 25px;
+  color: #000000;
+
 }
 
 
