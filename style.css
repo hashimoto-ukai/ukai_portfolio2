@@ -512,4 +512,54 @@ body {
 
 
 
+
+/* ここからl-news */
+.l-news {
+  width: 100%;
+  margin-top: 50px;
+}
+.l-news__container {
+  width: 100%;
+  border-bottom: solid 1px #000000;
+}
+.l-news__maintitle {
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.l-news__box {
+  margin: 0 auto;
+  width: 70%;
+}
+.l-news__listBox {
+  margin-bottom: 70px;
+  width: 100%;
+}
+.l-news__list1 {
+  border-bottom: #000000 solid 1px;
+  cursor: pointer;
+  width: 100%;
+  list-style: none;
+}
+.l-news__titleBox {
+  display: flex;
+  text-align: center;
+  height: 70px;
+  justify-content: space-between;
+}
+.l-news__list2 {
+  border-bottom: #000000 solid 1px;
+  cursor: pointer;
+  width: 100%;
+  list-style: none;
+}
+.l-news__list3 {
+  border-bottom: #000000 solid 1px;
+  cursor: pointer;
+  width: 100%;
+  list-style: none;
+}
+
+
+
 }
