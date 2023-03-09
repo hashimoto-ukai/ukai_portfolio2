@@ -418,7 +418,7 @@
         </div>
         <div class="l-news__box">
           <ul class="l-news__listBox">
-            <li class="l-news__list1"> <!-- ここホバーポインター -->
+            <li class="l-news__list1">
               <div class="l-news__titleBox">
                 <p class="l-news__date">2023.3.9</p>
                 <p class="l-news__title">HASHIMOTO PACKAGE EXHIBITION『10年後のハシモト』</p>
@@ -523,6 +523,13 @@
         centerMode: true, //要素を中央寄せ
         centerPadding:'29%', //両サイドの見えている部分のサイズ
       });
+    });
+
+    $(function () {
+      $('.l-news__contentBox').css("display", "none");
+      $('.l-news__titleBox').on('click', function () {
+        $(this).next().slideToggle();
+      })
     });
 
   </script>
