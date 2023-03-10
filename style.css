@@ -549,7 +549,8 @@ body {
   text-align: center;
   height: 70px;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .l-news__title {
   margin-left: 80px;
