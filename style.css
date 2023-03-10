@@ -1,6 +1,7 @@
 @media screen and (min-width: 769px) {
 body {
   margin: 0;
+  min-width: 1080px;
 }
 .l-wrap.is-active {
   position: fixed;
@@ -25,6 +26,7 @@ body {
 .l-header__title {
   margin-top: 25px;
   margin-left: 50px;
+  font-weight: bold;
 }
 .humberger {
   margin-top: 30px;
@@ -532,8 +534,9 @@ body {
   width: 70%;
 }
 .l-news__listBox {
-  margin-bottom: 70px;
+  margin-bottom: 200px;
   width: 100%;
+  padding-left: 0;
 }
 .l-news__list1 {
   border-bottom: #000000 solid 1px;
@@ -546,6 +549,7 @@ body {
   text-align: center;
   height: 70px;
   align-items: center;
+  margin-top: 60px;
 }
 .l-news__title {
   margin-left: 80px;
@@ -581,4 +585,53 @@ body {
 
 
 
+
+
+/* ここからCONTACT */
+
+.l-contact {
+  height: 202px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.l-contact__link {
+  text-decoration: none;
+  background-color: #fff;
+}
+.l-contact__text {
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+  color: #000000;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  margin-top: 0;
+}
+
+
+/* ここからFOOTER */
+.l-footer {
+  width: 100%;
+  height: 100px;
+}
+.l-footer__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.l-footer__logo {
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.l-footer__text {
+  margin-left: 40px;
+  font-size: 10px;
+}
+.l-footer__link {
+  color: #000000;
+  margin-left: 40px;
+  font-size: 10px;
+}
 }

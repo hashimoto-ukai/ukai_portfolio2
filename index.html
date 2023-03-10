@@ -469,14 +469,19 @@
 
 
       <div class="l-contact">
-        <li class="l-contact__list">
-          <a href="#" class="l-contact__link">CONTACT</a>
-        </li>
+        <a href="#" class="l-contact__link">
+          <p class=l-contact__text>CONTACT</p>
+        </a>
       </div>
 
 
 
       <div class="l-footer">
+        <div class="l-footer__container">
+          <p class="l-footer__logo">HSMT</p>
+          <p class="l-footer__text">© HASHIMOTO CREATIVE INC.</p>
+          <a href="#" class="l-footer__link">PRIVACY POLICY</a>
+        </div>
       </div>
 
 
@@ -484,8 +489,7 @@
 
 
 
-      https://cdn.pixabay.com/photo/2015/07/20/12/53/gehlert-852762_1280.jpg
-
+  
 
 
 
@@ -531,6 +535,25 @@
         $(this).next().slideToggle();
       })
     });
+    
+
+
+    $(function() {
+
+$(".l-contact").hover(function() {
+
+  // カーソルが当たった時の処理
+  $(this).css("background-color", "black");
+  $(".l-contact__text").css("color", "#fff")
+
+}, function() {
+
+  // カーソルが離れた時の処理
+  $(this).css("background-color", "#fff");
+  $(".l-contact__text").css("color", "#000000")
+
+});
+});
 
   </script>
 </body>
