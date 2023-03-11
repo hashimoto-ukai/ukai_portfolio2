@@ -1,42 +1,68 @@
-document.addEventListener( "DOMContentLoaded",function(){
-  let canvas = null;  // キャンバス
-  let g = null;       // 描画コンテキスト
-  let x, y, r;        // ●のx座標、y座標、半径
-  let vx, vy;            // x方向の速度、y方向の速度
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+var raf;
 
-function drawAnim(){
-    // 背景をグレーに
-    g.fillStyle = "#fff";
-    g.fillRect(0, 0, canvas.width, canvas.height);
-    // ●を描画
-    g.beginPath();
-    g.fillStyle = "steelblue";    // 塗りつぶす色
-    g.arc(x, y, r, 0, Math.PI*2, false);
-    g.fill();
-    // ●の移動
-    x += vx;
-    y += vy;
-    // 壁に当たったら跳ね返る（●のxy座標は中心点のため、半径を考慮）
-    if(x < 0+r || x > canvas.width-r){
-        vx = -vx;
+var ball = {
+    x: 50,
+    y: 50,
+    vx: 1,
+    vy: 2,
+    radius: 3,
+    color: 'blue',
+    draw: function() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+        ctx.closePath();
+        ctx.fillStyle = this.color;
+        ctx.fill();
     }
-    if(y < 0+r || y > canvas.height-r){
-        vy = -vy;
+};
+
+// var ball = {
+//     x: 50,
+//     y: 50,
+//     vx: 3,
+//     vy: 2,
+//     radius: 3,
+//     color: '#006400',
+//     draw: function() {
+//         ctx.beginPath();
+//         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+//         ctx.closePath();
+//         ctx.fillStyle = this.color;
+//         ctx.fill();
+//     }
+//     };
+
+function draw() {
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    ball.draw();
+    ball.x += ball.vx;
+    ball.y += ball.vy;
+
+    if (ball.y + ball.vy > canvas.height ||
+        ball.y + ball.vy < 0) {
+        ball.vy = -ball.vy;
     }
-    // 再帰呼び出しでアニメーションさせる
-    requestAnimationFrame(drawAnim);
+    if (ball.x + ball.vx > canvas.width ||
+        ball.x + ball.vx < 0) {
+        ball.vx = -ball.vx;
+    }
+
+    raf = window.requestAnimationFrame(draw);
 }
-window.addEventListener("load", ()=>{
-    // キャンバスの初期設定
-    canvas = document.getElementById("canvas");
-    g = canvas.getContext("2d");
-    // 描画する●の初期設定
-    x = 100; y = 50; r = 30;
-    vx = 5; vy = 3;
-    // アニメーション開始
-    drawAnim();
+
+canvas.addEventListener('mouseover', function(e) {
+    raf = window.requestAnimationFrame(draw);
 });
 
-
-
+canvas.addEventListener('mouseout', function(e) {
+window.cancelAnimationFrame(raf);
 });
+
+ball.draw();
+
+
+
+
+

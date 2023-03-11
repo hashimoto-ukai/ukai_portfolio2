@@ -216,32 +216,34 @@ body {
   border-right: solid 1px #000000;
 }
 .l-policy__mainTitle {
-  margin-left: 120px;
+  margin-left: 20%;
   margin-top: 100px;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   text-align: left;
+  margin-right: 40px;
 }
 .l-policy__mainText {
-  margin-left: 120px;
+  margin-left: 20%;
   margin-top: 80px;
   font-size: 17px;
   text-align: left;
   line-height: 50px;
   margin-bottom: 100px;
+  margin-right: 40px;
 }
 .l-policy__logo {
   width: 50%;
 }
 .l-policy__logoText {
   position: relative;
-  top: 90px;
+  top: -315px;
   margin-left: 80px;
   font-weight: 700;
 }
 .l-policy__logoSubText {
   position: relative;
-  top: 100px;
+  top: -320px;
   margin-bottom: 100px;
   line-height: 26px;
   margin-left: 80px;
@@ -249,6 +251,9 @@ body {
 #canvas {
   width: 100%;
   height: 100%;
+}
+.sp {
+  display: none;
 }
 
 
@@ -309,9 +314,11 @@ body {
 }
 .l-works__listBox {
   padding-left: 0;
+  margin: 0;
 }
 .l-works__link {
   list-style: none;
+
 }
 .l-works__link a {
   text-decoration: none;
@@ -558,6 +565,14 @@ body {
 .btn {
   margin: 0 0 0 auto;
 }
+.www {
+  display: flex;
+  text-align: initial;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+}
 .l-news__list2 {
   border-bottom: #000000 solid 1px;
   cursor: pointer;
@@ -627,6 +642,10 @@ body {
   margin-left: 50px;
   font-weight: bold;
 }
+.eee {
+  display: flex;
+  align-items: center;
+}
 .l-footer__text {
   margin-left: 40px;
   font-size: 10px;
@@ -637,6 +656,31 @@ body {
   font-size: 10px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -890,49 +934,49 @@ body {
   /* ここからmain2 */
   .l-policy {
     width: 100%;
-    display: flex;
     border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
     margin-top: 50px;
   }
   .l-policy__main {
-    width: 50%;
-    border-right: solid 1px #000000;
+    width: 100%;
+    border-bottom: solid 1px #000000;
   }
   .l-policy__mainTitle {
-    margin-left: 120px;
+    margin-left: 7%;
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     text-align: left;
   }
   .l-policy__mainText {
-    margin-left: 120px;
+    margin-left: 7%;
     margin-top: 80px;
-    font-size: 17px;
+    font-size: 25px;
     text-align: left;
-    line-height: 50px;
+    line-height: 70px;
     margin-bottom: 100px;
   }
   .l-policy__logo {
-    width: 50%;
+    width: 100%;
+    height: 145vw;
   }
   .l-policy__logoText {
     position: relative;
-    top: 90px;
-    margin-left: 80px;
-    font-weight: 700;
+    top: -380px;
+    margin-left: 7%;
+    font-size: 23px;
   }
   .l-policy__logoSubText {
     position: relative;
-    top: 100px;
-    margin-bottom: 100px;
-    line-height: 26px;
-    margin-left: 80px;
+    top: -370px;
+    line-height: 45px;
+    margin-left: 7%;
+    font-size: 23px;
   }
   #canvas {
     width: 100%;
     height: 100%;
+    border-bottom: #000000 1px solid;
   }
   
   
@@ -946,25 +990,24 @@ body {
     margin-top: 150px;
   }
   .l-works__title {
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 50px;
+    margin-left: 30px;
     font-weight: bold;
+    margin-bottom: 40px;
   }
   .l-works__container {
-    display: flex;
     border-top: solid 1px #000000;
-    flex-wrap: wrap;
     width: 100%;
   }
   .l-works__list {
-    width: 33%;
+    width: 100%;
     border-bottom: 1px solid #000000;
   }
   .l-works__img {
     width: 80%;
     background-size: cover;
     background-position: center center;
-    padding-top: 90%;
+    padding-top: 80%;
     height: 0;
     margin: 40px auto 20px auto;
   }
@@ -982,10 +1025,11 @@ body {
     border-right: solid 1px #000000;
   }
   .l-works__text {
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     margin: 0 auto;
     width: 80%;
+    font-weight: bold;
   }
   .l-works__media {
     width: 80%;
@@ -993,9 +1037,14 @@ body {
   }
   .l-works__listBox {
     padding-left: 0;
+    margin-bottom: 80px;
   }
   .l-works__link {
     list-style: none;
+    font-size: 22px;
+  }
+  .l-works__arrow {
+    font-size: 22px;
   }
   .l-works__link a {
     text-decoration: none;
@@ -1004,6 +1053,7 @@ body {
   .l-works__more {
     width: 100%;
     list-style: none;
+    border-bottom: solid 1px #000000;
   }
   .l-works__moreBox {
     display: flex;
@@ -1012,6 +1062,7 @@ body {
     margin-top: 50px;
     text-decoration: none;
     align-items: center;
+    margin-bottom: 50px;
   }
   .l-works__link {
     color: #000000;
@@ -1030,13 +1081,14 @@ body {
   /* ここからPEOPLE */
   .l-people {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 150px;
   }
   
   .l-people__title {
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 50px;
+    margin-left: 30px;
     font-weight: bold;
+    margin-bottom: 40px;
   }
   .loopSlide {
     position: relative;
@@ -1176,6 +1228,7 @@ body {
   .l-people__more {
     width: 100%;
     list-style: none;
+    border-bottom: solid 1px #000000;
   }
   .l-people__moreBox {
     display: flex;
@@ -1184,6 +1237,7 @@ body {
     margin-top: 50px;
     text-decoration: none;
     align-items: center;
+    margin-bottom: 50px;
   }
   .l-people__link {
     color: #000000;
@@ -1209,13 +1263,14 @@ body {
     border-bottom: solid 1px #000000;
   }
   .l-news__maintitle {
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 50px;
+    margin-left: 30px;
     font-weight: bold;
+    margin-bottom: 40px;
   }
   .l-news__box {
     margin: 0 auto;
-    width: 70%;
+    width: 95%;
   }
   .l-news__listBox {
     margin-bottom: 200px;
@@ -1229,17 +1284,29 @@ body {
     list-style: none;
   }
   .l-news__titleBox {
-    display: flex;
-    text-align: center;
-    height: 70px;
+    text-align: left;
     align-items: center;
+    margin-left: 30px;
+  }
+  .l-news__date {
+    font-size: 20px;
     margin-top: 60px;
   }
   .l-news__title {
-    margin-left: 80px;
+    font-size: 20px;
+    margin-bottom: 60px;
+    margin-top: 0;
+    margin-right: 20px;
   }
   .btn {
     margin: 0 0 0 auto;
+    padding-right: 20px;
+  }
+  .www {
+    display: flex;
+    text-align: initial;
+    width: 100%;
+    justify-content: space-between;
   }
   .l-news__list2 {
     border-bottom: #000000 solid 1px;
@@ -1256,12 +1323,17 @@ body {
   
   
   .l-news__contentBox {
-    margin-left: 150px;
+    margin-left: 30px;
     margin-top: 20px;
     margin-bottom: 60px;
   }
   .l-news__content {
-    line-height: 30px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .l-news__subContent {
+    line-height: 50px;
+    font-size: 20px;
   }
   .l-news__link {
     color: #000000;
@@ -1274,7 +1346,6 @@ body {
   /* ここからCONTACT */
   
   .l-contact {
-    height: 202px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
   }
@@ -1283,14 +1354,15 @@ body {
     background-color: #fff;
   }
   .l-contact__text {
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 50px;
+    margin-left: 30px;
     font-weight: bold;
     color: #000000;
     align-items: center;
     height: 100%;
     display: flex;
-    margin-top: 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   
   
@@ -1300,25 +1372,32 @@ body {
     height: 100px;
   }
   .l-footer__container {
-    display: flex;
     align-items: center;
     height: 100%;
   }
   .l-footer__logo {
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-left: 30px;
     font-weight: bold;
   }
   .l-footer__text {
-    margin-left: 40px;
-    font-size: 10px;
+    margin-left: 30px;
+    font-size: 15px;
   }
   .l-footer__link {
     color: #000000;
     margin-left: 40px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
+
+
+  .eee {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
 
 
 
