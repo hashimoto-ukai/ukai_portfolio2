@@ -5,9 +5,9 @@ var raf;
 var ball = {
     x: 50,
     y: 50,
-    vx: 1,
-    vy: 2,
-    radius: 3,
+    vx: 0.2,
+    vy: 0.1,
+    radius: 10,
     color: 'blue',
     draw: function() {
         ctx.beginPath();

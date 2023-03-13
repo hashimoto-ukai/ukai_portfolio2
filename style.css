@@ -770,10 +770,12 @@ body {
     background-color: #fff;
   }
   .l-header__title {
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 5%;
     font-weight: bold;
-    font-size: 25px;
+    font-size: clamp(0.938rem, 0.288rem + 2.77vw, 1.563rem);
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
   }
   .humberger {
     margin-top: 35px;
@@ -937,9 +939,10 @@ body {
     height: 100%;
   }
   .l-topics__text {
-    font-size: 35px;
+    font-size: clamp(1.063rem, -0.106rem + 4.99vw, 2.188rem);
     font-weight: bold;
     margin-bottom: 0;
+    margin: 4% 2% 0 2%;
   }
   .l-topics__text.is-active {
     font-size: 24px;
@@ -951,6 +954,7 @@ body {
   .l-topics__mediaBox {
     display: flex;
     padding-left: 0;
+    margin-left: 5%;
   }
   .l-topics__link {
     margin-right: 20px;
@@ -958,6 +962,7 @@ body {
   .l-topics__category {
     text-decoration: none;
     color: #000000;
+    font-size: clamp(0.563rem, 0.043rem + 2.22vw, 1.063rem);
   }
   
   
@@ -973,18 +978,18 @@ body {
   }
   .l-policy__mainTitle {
     margin-left: 7%;
-    margin-top: 100px;
-    font-size: 35px;
+    margin-top: 20%;
+    font-size: clamp(1.063rem, -0.106rem + 4.99vw, 2.188rem);
     font-weight: bold;
     text-align: left;
   }
   .l-policy__mainText {
     margin-left: 7%;
-    margin-top: 80px;
-    font-size: 25px;
+    margin-top: 15%;
+    font-size: clamp(0.75rem, -0.094rem + 3.6vw, 1.563rem);
     text-align: left;
-    line-height: 70px;
-    margin-bottom: 100px;
+    line-height: 10vw;
+    margin-bottom: 10%;
   }
   .l-policy__logo {
     width: 100%;
@@ -992,16 +997,16 @@ body {
   }
   .l-policy__logoText {
     position: relative;
-    top: -380px;
+    bottom: 37%;
     margin-left: 7%;
-    font-size: 23px;
+    font-size: clamp(0.688rem, -0.092rem + 3.32vw, 1.438rem);
   }
   .l-policy__logoSubText {
     position: relative;
-    top: -370px;
-    line-height: 45px;
+    bottom: 35%;
+    line-height: 6vw;
     margin-left: 7%;
-    font-size: 23px;
+    font-size: clamp(0.688rem, -0.092rem + 3.32vw, 1.438rem);
   }
   #canvas {
     width: 100%;
@@ -1433,3 +1438,6 @@ body {
 
 
 }
+
+
+
