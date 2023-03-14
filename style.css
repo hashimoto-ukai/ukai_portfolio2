@@ -266,9 +266,11 @@ body {
   line-height: 26px;
   margin-left: 80px;
 }
-#canvas {
+.l-canvas {
   width: 100%;
   height: 100%;
+}
+#canvas {
 }
 .sp {
   display: none;
