@@ -1,4 +1,4 @@
-// var canvas1 = document.getElementById('l-canvas');
+// var canvas1 = document.getElementById('l-canvas');←ここと
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var raf;
@@ -8,7 +8,7 @@ var ball = {
     y: 100,
     vx: 4,
     vy: 3,
-    radius: 30,
+    radius: 60,
     color: 'blue',
     draw: function() {
         ctx.beginPath();
@@ -24,6 +24,15 @@ var h = $('.l-canvas').height();
 $('#canvas').attr('width', w);
 $('#canvas').attr('height', h);
 
+
+
+
+
+// function getSize() {
+//     canvas.width = canvas1.offsetWidth;
+//     canvas.height = canvas1.offsetHeight;
+
+// }      ←ここです
 
 
 

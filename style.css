@@ -1,7 +1,7 @@
 @media screen and (min-width: 737px) {
 body {
   margin: 0;
-  min-width: 1080px;
+  /* min-width: 1080px; */
 }
 .l-wrap.is-active {
   position: fixed;
@@ -252,6 +252,7 @@ body {
 }
 .l-policy__logo {
   width: 50%;
+  position: relative;
 }
 .l-policy__logoText {
   position: relative;
@@ -269,8 +270,10 @@ body {
 .l-canvas {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 #canvas {
+  display: block;
 }
 .sp {
   display: none;
@@ -376,6 +379,7 @@ body {
 .l-people {
   width: 100%;
   margin-top: 50px;
+  min-width: initial;
 }
 
 .l-people__title {
@@ -424,7 +428,7 @@ body {
 .kkk {
   display: inline-block;
   width: 100%;
-  min-width: 150px;
+  /* min-width: 150px; */
   list-style: none;
   text-align: center;
   border-top: solid 1px #000000;
@@ -470,6 +474,7 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 
 
 
