@@ -394,7 +394,7 @@ body {
 }
 .loopSlide ul {
   padding: 0;
-  width: 100vw;
+  width: 115vw;
   display: flex;
   flex-shrink: 0;
 }
@@ -489,7 +489,7 @@ body {
 }
 .loopSlide2 ul {
   padding: 0;
-  width: 100vw;
+  width: 115vw;
   display: flex;
   flex-shrink: 0;
 }
@@ -1139,7 +1139,7 @@ body {
   }
   .loopSlide ul {
     padding: 0;
-    width: 100vw;
+    width: 250vw;
     display: flex;
     flex-shrink: 0;
   }
@@ -1233,7 +1233,7 @@ body {
   }
   .loopSlide2 ul {
     padding: 0;
-    width: 100vw;
+    width: 250vw;
     display: flex;
     flex-shrink: 0;
   }
