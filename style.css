@@ -831,6 +831,7 @@ body {
     left: 0;
     right: 0;
     margin-top: 81px;
+    overflow: auto;
   }
   .l-header__list {
     display: flex;
@@ -855,28 +856,29 @@ body {
     border-right: solid 1px #000000;
   }
   .l-header__linkBox {
-    width: 49.92%;
-    height: 213px;
+    width: 49.86%;
+    height: 38.4vw;
     list-style: none;
     /* border-right: solid 1px #000000; */
     border-bottom: solid 1px #000000;
   }
   .l-header__link {
     height: 100%;
-    padding: 50px 0 0 9.36768%;
+    /* padding: 50px 0 0 9.36768%; */
     text-decoration: none;
     /* transition: background-color 80ms, color 80ms;
     -webkit-transition: background-color 80ms, color 80ms; */
   }
   .title {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: clamp(0.938rem, -0.036rem + 4.16vw, 1.875rem);
+    font-weight: 700;
     /* -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; */
     color: #000000;
-    margin-left: 20px;
+    margin-left: 15%;
+    margin-top: 15%;
   }
   .l-topics__img {
     height: 400px;
@@ -888,17 +890,17 @@ body {
   }
   .bottom__container {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 15%;
   }
   .borttom__containerText {
-    font-size: 12px;
+    font-size: clamp(0.688rem, -0.092rem + 3.32vw, 1.438rem);
     font-weight: 600;
     text-align: center;
     padding-top: 30px;
   }
   .bottom__logo {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 10%;
   }
   .bottom__link {
     display: inline-block;
@@ -908,23 +910,24 @@ body {
     color: #000000;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px;
+    font-size: clamp(0.625rem, -0.089rem + 3.05vw, 1.313rem);
   }
   .bottom__link:hover {
     box-shadow: none;
     transform: translateY(5px);
   }
   .bottom__text {
-    font-size: 8px;
+    font-size: clamp(0.625rem, -0.089rem + 3.05vw, 1.313rem);
     text-align: center;
-    margin-top: 10px;
+    margin-top: 3%;
   }
   .top__page {
     display: flex;
     justify-content: center;
     color: #000000;
-    font-size: 12px;
-    margin-top: 40px;
+    font-size: clamp(0.75rem, -0.029rem + 3.32vw, 1.5rem);
+    margin-top: 10%;
+    margin-bottom: 20%;
   }
   
   
